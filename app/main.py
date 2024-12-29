@@ -9,7 +9,7 @@ from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 app = Flask(__name__)
 
 resource = Resource(attributes={
-    SERVICE_NAME: "your-service-name"
+    SERVICE_NAME: "Python-app"
 })
 
 reader = PeriodicExportingMetricReader(
